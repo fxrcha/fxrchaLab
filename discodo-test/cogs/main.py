@@ -25,6 +25,7 @@ class MainCog(commands.Cog):
     @commands.command(name="play")
     async def play(self, ctx, *, query : str):
         Audio = self.bot.Wonstein.getVC(ctx.guild.id)
+        await Audio.setAutoplay(False)
         if not Audio:
             embed = Embed.warn(title = "먼저 `!join`을 입력해주세요.")
             return await ctx.send(embed=embed)
@@ -32,7 +33,6 @@ class MainCog(commands.Cog):
         if isinstance(Data, list):
             Data = Data[0]
         Source, Index = Data["data"], Data["index"] + 1
-
         if Index == 1:
             await ctx.send(
                 f'> 🎵  {Source["title"]}이 곧 재생되어요!'

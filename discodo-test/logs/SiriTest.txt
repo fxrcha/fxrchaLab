@@ -60,3 +60,12 @@
 [ERROR][SiriTest][2021-01-04 00:24:12,486]: An error occured while play. Traceback : Command raised an exception: VoiceClientNotFound: 
 [ERROR][SiriTest][2021-01-04 00:24:18,118]: An error occured while play. Traceback : Command raised an exception: VoiceClientNotFound: 
 [ERROR][SiriTest][2021-01-04 00:24:19,211]: An error occured while play. Traceback : Command raised an exception: VoiceClientNotFound: 
+[INFO][SiriTest][2021-01-04 00:30:22,253]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-04 00:30:25,270]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-04 00:30:25,270]: Logged as Siri
+[INFO][SiriTest][2021-01-04 00:36:15,538]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-04 00:36:18,818]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-04 00:36:18,818]: Logged as Siri
+[INFO][SiriTest][2021-01-04 00:39:52,898]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-04 00:39:55,867]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-04 00:39:55,867]: Logged as Siri
