@@ -1,0 +1,7 @@
+[INFO][SiriTest][2021-01-03 23:05:18,883]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-03 23:05:29,792]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-03 23:05:32,701]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-03 23:05:32,701]: Logged as Siri
+[INFO][SiriTest][2021-01-03 23:05:56,662]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-03 23:05:59,963]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-03 23:05:59,963]: Logged as Siri

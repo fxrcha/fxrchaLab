@@ -1,0 +1,6 @@
+[INFO][DiscodoTest][2021-01-03 23:03:20,659]: DiscodoTest Loaded.
+[INFO][DiscodoTest][2021-01-03 23:03:24,119]: == This is bot is not for commericial use. ==
+[INFO][DiscodoTest][2021-01-03 23:03:24,119]: Logged as Siri
+[INFO][DiscodoTest][2021-01-03 23:04:14,604]: DiscodoTest Loaded.
+[INFO][DiscodoTest][2021-01-03 23:04:17,719]: == This is bot is not for commericial use. ==
+[INFO][DiscodoTest][2021-01-03 23:04:17,719]: Logged as Siri
