@@ -23,15 +23,24 @@ class MainCog(commands.Cog):
             
 
     @commands.command(name="play")
-    async def play(self, ctx, *, query):
-        Audio = self.bot.Wonstein.getVC(ctx.guild)
+    async def play(self, ctx, *, query : str):
+        Audio = self.bot.Wonstein.getVC(ctx.guild.id)
         if not Audio:
             embed = Embed.warn(title = "먼저 `!join`을 입력해주세요.")
             return await ctx.send(embed=embed)
-        if not hasattr(Audio, "channel"):
-            Audio.channel = ctx.message.channel
-        Source = await Audio.loadSource(query)
-        await ctx.send (f"{Source['data']['title']} 추가완료")
+        Data = await Audio.loadSource(query)
+        if isinstance(Data, list):
+            Data = Data[0]
+        Source, Index = Data["data"], Data["index"] + 1
+
+        if Index == 1:
+            await ctx.send(
+                f'> 🎵  {Source["title"]}이 곧 재생되어요!'
+            )
+        else:
+            await ctx.send(
+                f'> 🎵  {Source["title"]}이 대기열 **{Index}**번에 추가되었어요!'
+            )
 
 
 def setup(bot):

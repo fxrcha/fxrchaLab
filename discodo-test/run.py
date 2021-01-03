@@ -18,8 +18,6 @@ class SiriTest(commands.Bot):
         self.logger = Logger.basicLogger(self)
         self.discordlog = Logger.discordLogger()
         self.Wonstein = discodo.DPYClient(self)
-        self.loop = asyncio.get_event_loop()
-        self.loop.run_until_complete(General.RunDiscodoNode())
         
 
     async def on_message(self, message):
@@ -28,7 +26,7 @@ class SiriTest(commands.Bot):
     async def on_ready(self):
         self.logger.info("== This is bot is not for commericial use. ==")
         self.logger.info(f"Logged as {self.user.name}")
-        self.Wonstein.register_node("localhost", 6974, password="SEXSEXSEX!!")
+        self.Wonstein.register_node("localhost", 6974, password="SEXSEXSEX")
         
 
 
