@@ -1,5 +1,7 @@
+import logging
 import discord
 import discodo
+import asyncio
 from discord.ext import commands
 from config import TOKEN
 from log import Logger
@@ -16,14 +18,14 @@ class SiriTest(commands.Bot):
         self.logger = Logger.basicLogger(self)
         self.discordlog = Logger.discordLogger()
         self.Wonstein = discodo.DPYClient(self)
-        self.utils = General()
+        self.loop = asyncio.get_event_loop()
+        self.loop.run_until_complete(General.RunDiscodoNode())
         
 
     async def on_message(self, message):
         if not message.author.bot: await self.process_commands(message)
 
     async def on_ready(self):
-        self.utils.RunDiscodoNode()
         self.logger.info("== This is bot is not for commericial use. ==")
         self.logger.info(f"Logged as {self.user.name}")
         self.Wonstein.register_node("localhost", 6974, password="SEXSEXSEX!!")
