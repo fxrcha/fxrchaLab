@@ -1,4 +1,3 @@
-from logging import Logger
 import discord
 from discord.ext import commands
 from log import Logger
@@ -9,6 +8,9 @@ class MainCog(commands.Cog):
         self.logger = Logger.basicLogger(self)
 
 
+    @commands.command(name="join")
+    async def join(self):
+        pass
 
 
 def setup(bot):
