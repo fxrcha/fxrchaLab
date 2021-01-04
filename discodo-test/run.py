@@ -18,6 +18,7 @@ class SiriTest(commands.Bot):
         self.logger = Logger.basicLogger(self)
         self.discordlog = Logger.discordLogger()
         self.Wonstein = discodo.DPYClient(self)
+        asyncio.run(General.startDiscodo())
         
 
     async def on_message(self, message):
