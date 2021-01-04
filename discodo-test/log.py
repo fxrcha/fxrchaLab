@@ -23,13 +23,14 @@ class Logger:
     @staticmethod
     def discordLogger():
         logger = logging.getLogger('discord')
-        logger.setLevel(logging.DEBUG)
-        if not logger.hasHandlers():
-            streamhandler = logging.StreamHandler()
-            streamhandler.setFormatter(FORMATTER)
-            filehandler = logging.FileHandler(f"logs/discord.txt", "a")
-            filehandler.setFormatter(FORMATTER)
-            logger.addHandler(streamhandler)
-            logger.addHandler(filehandler)
+        logger.setLevel(logging.INFO)
+        if logger.hasHandlers():
+            logger.handlers.clear()
+        streamhandler = logging.StreamHandler()
+        streamhandler.setFormatter(FORMATTER)
+        filehandler = logging.FileHandler(f"logs/discord.txt", "a")
+        filehandler.setFormatter(FORMATTER)
+        logger.addHandler(streamhandler)
+        logger.addHandler(filehandler)
         logger.info(f"Discord Loaded.")
         return logger
