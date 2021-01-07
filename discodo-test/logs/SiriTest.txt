@@ -70,3 +70,21 @@
 [INFO][SiriTest][2021-01-04 00:39:55,867]: == This is bot is not for commericial use. ==
 [INFO][SiriTest][2021-01-04 00:39:55,867]: Logged as Siri
 [INFO][SiriTest][2021-01-04 23:29:26,640]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 22:31:26,952]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 22:31:29,930]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-07 22:31:29,930]: Logged as Siri
+[INFO][SiriTest][2021-01-07 22:34:09,545]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 22:34:12,436]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-07 22:34:12,436]: Logged as Siri
+[INFO][SiriTest][2021-01-07 22:34:53,587]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 22:34:56,792]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-07 22:34:56,793]: Logged as Siri
+[INFO][SiriTest][2021-01-07 22:35:43,809]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 22:35:47,125]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-07 22:35:47,125]: Logged as Siri
+[INFO][SiriTest][2021-01-07 23:05:48,755]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 23:05:51,690]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-07 23:05:51,690]: Logged as Siri
+[INFO][SiriTest][2021-01-07 23:06:36,979]: SiriTest Loaded.
+[INFO][SiriTest][2021-01-07 23:06:40,010]: == This is bot is not for commericial use. ==
+[INFO][SiriTest][2021-01-07 23:06:40,010]: Logged as Siri

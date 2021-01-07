@@ -1,6 +1,7 @@
-from re import A
+from discodo import source
 import discord
 from discord.ext import commands
+from . import CheckVoice
 from utils.embed import Embed
 from log import Logger
 
@@ -8,7 +9,6 @@ class MainCog(commands.Cog):
     def __init__(self, bot) -> None:
         self.bot = bot
         self.logger = Logger.basicLogger(self)
-
 
     @commands.command(name="join")
     async def join(self, ctx):
@@ -23,6 +23,7 @@ class MainCog(commands.Cog):
             
 
     @commands.command(name="play")
+    @commands.check(CheckVoice)
     async def play(self, ctx, *, query : str):
         Audio = self.bot.Wonstein.getVC(ctx.guild.id)
         await Audio.setAutoplay(False)
@@ -33,6 +34,7 @@ class MainCog(commands.Cog):
         if isinstance(Data, list):
             Data = Data[0]
         Source, Index = Data["data"], Data["index"] + 1
+        self.logger.info(Source)
         if Index == 1:
             await ctx.send(
                 f'> 🎵  {Source["title"]}이 곧 재생되어요!'
@@ -45,3 +47,6 @@ class MainCog(commands.Cog):
 
 def setup(bot):
     bot.add_cog(MainCog(bot))
+    bot.Wonstein.register_node(
+        "localhost", "6974", password="SEXSEXSEX"
+    )
